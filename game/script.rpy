@@ -5,16 +5,16 @@
 image bg maison blanche = "backgrounds/bg_whitehouse.jpg"
 
 # Déclarez les personnages utilisés dans le jeu.
-define nouvelle_fille = Character('Elen', color="#e4a6e1")
+define leon = Character("Leon")
 
 
 # Le jeu commence ici
 label start:
-    show bg maison blanche
+    scene bg maison blanche
     with dissolve
 
-    nouvelle_fille "Vous venez de créer un nouveau jeu Ren'Py."
+    "Vous venez de créer un nouveau jeu Ren'Py."
 
-    nouvelle_fille "Après avoir ajouté une histoire, des images et de la musique, vous pourrez le présenter au monde entier !"
+    "Après avoir ajouté une histoire, des images et de la musique, vous pourrez le présenter au monde entier !"
 
     return
