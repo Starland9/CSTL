@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 14: expected statement.
-    whith dis
+File "game/labels/prologue/prologue.rpy", line 26: expected statement.
+    christaul
              ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Wed May  1 06:47:17 2024
+Wed May 15 11:27:08 2024
