@@ -1,30 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 25, in script
-    show papa_cstl width 400
-Exception: Image 'papa_cstl' does not accept attributes 'width 400'.
+  File "renpy/common/00start.rpy", line 213, in script
+    python hide:
+  File "renpy/common/00start.rpy", line 213, in <module>
+    python hide:
+  File "renpy/common/00start.rpy", line 214, in _execute_python_hide
+    renpy.warp.warp()
+Exception: Could not find a statement to warp to. (script.rpy:1)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 25, in script
-    show papa_cstl width 400
-  File "/opt/renpy-8.2.1-sdk/renpy/ast.py", line 1113, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "/opt/renpy-8.2.1-sdk/renpy/ast.py", line 1076, in show_imspec
-    renpy.config.show(name,
-  File "/opt/renpy-8.2.1-sdk/renpy/exports.py", line 739, in show
-    if not base.find_target() and renpy.config.missing_show:
-  File "/opt/renpy-8.2.1-sdk/renpy/display/image.py", line 421, in find_target
-    self.target = target._duplicate(a)
-  File "/opt/renpy-8.2.1-sdk/renpy/display/displayable.py", line 246, in _duplicate
-    args.extraneous()
-  File "/opt/renpy-8.2.1-sdk/renpy/display/displayable.py", line 109, in extraneous
-    raise Exception("Image '{}' does not accept attributes '{}'.".format(
-Exception: Image 'papa_cstl' does not accept attributes 'width 400'.
+  File "renpy/common/00start.rpy", line 213, in script
+    python hide:
+  File "/opt/renpy-8.2.1-sdk/renpy/ast.py", line 823, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/opt/renpy-8.2.1-sdk/renpy/python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 213, in <module>
+    python hide:
+  File "renpy/common/00start.rpy", line 214, in _execute_python_hide
+    renpy.warp.warp()
+  File "/opt/renpy-8.2.1-sdk/renpy/warp.py", line 144, in warp
+    raise Exception("Could not find a statement to warp to. ({})".format(spec))
+Exception: Could not find a statement to warp to. (script.rpy:1)
 
 Linux-6.5.0-35-generic-x86_64-with-glibc2.35 x86_64
 Ren'Py 8.2.1.24030407
-CSTL 1.0
-Wed May 15 11:12:08 2024
+Find Your Mate 1.0
+Thu May 16 15:05:44 2024
